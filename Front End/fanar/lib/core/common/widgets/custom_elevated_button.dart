@@ -9,17 +9,18 @@ class CustomElevatedButton extends StatelessWidget {
     super.key,
     required this.label,
     this.onPressed,
-    this.borderRadiusCircular = 12,
+    this.borderRadiusCircular = 8,
     this.backgroundColor,
   });
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
         backgroundColor:
-            backgroundColor ?? Theme.of(context).colorScheme.primary,
+            backgroundColor ?? theme.colorScheme.primary,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(borderRadiusCircular),
         ),
