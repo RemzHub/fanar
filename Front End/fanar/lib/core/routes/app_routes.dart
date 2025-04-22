@@ -4,7 +4,7 @@ import 'package:fanar/core/views/screens/actScreens/angerTest.dart';
 import 'package:fanar/core/views/screens/actScreens/chatbot.dart';
 import 'package:fanar/core/views/screens/actScreens/joyScreen.dart';
 import 'package:fanar/core/views/screens/actScreens/sadScreen.dart';
-import 'package:fanar/core/views/screens/actScreens/testScreen.dart';
+import 'package:fanar/features/test/screens/prepare_screen.dart';
 import 'package:fanar/core/views/screens/actScreens/VideoTest.dart';
 import 'package:fanar/core/views/screens/actScreens/testplanScreen.dart';
 import 'package:fanar/features/application/view/screens/applications_screen.dart';
@@ -65,7 +65,7 @@ class AppRoutes {
       name: RecruiterOpportunities.routeName,
       page: () => RecruiterOpportunities(),
     ),
-    GetPage(name: '/test', page: () => TestScreen()),
+    GetPage(name: '/test', page: () => PrepareScreen()),
     GetPage(name: '/angertest', page: () => AngertestScreen()),
     GetPage(name: '/joytest', page: () => JoyScreen()),
     GetPage(name: '/sadtest', page: () => sadScreen()),
