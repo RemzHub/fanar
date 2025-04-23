@@ -19,7 +19,7 @@ class CustomTextButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    return ElevatedButton(
+    return TextButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
         backgroundColor: backgroundColor,
@@ -32,8 +32,9 @@ class CustomTextButton extends StatelessWidget {
         label,
         style: TextStyle(
           color: Colors.grey,
-          fontSize: 18,
+          fontSize: 16,
           fontWeight: FontWeight.bold,
+          decoration: TextDecoration.underline,
         ),
       ),
     );

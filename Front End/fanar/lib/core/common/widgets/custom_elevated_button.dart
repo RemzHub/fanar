@@ -19,8 +19,7 @@ class CustomElevatedButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
-        backgroundColor:
-            backgroundColor ?? theme.colorScheme.primary,
+        backgroundColor: backgroundColor ?? theme.colorScheme.primary,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(borderRadiusCircular),
         ),
@@ -30,7 +29,7 @@ class CustomElevatedButton extends StatelessWidget {
         label,
         style: TextStyle(
           color: Colors.white,
-          fontSize: 18,
+          fontSize: 16,
           fontWeight: FontWeight.bold,
         ),
       ),
