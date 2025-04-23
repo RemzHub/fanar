@@ -11,6 +11,7 @@ import 'package:fanar/features/application/logic/application_controller.dart';
 import 'package:fanar/features/auth/controller/auth_controller.dart';
 import 'package:fanar/features/opportunity/controller/opportunity_controller.dart';
 import 'package:device_preview/device_preview.dart';
+import 'package:fanar/features/test/controller/test_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -21,6 +22,7 @@ import 'dart:io';
 import 'dart:typed_data';
 
 void main() {
+  Get.put(TestController());
   Get.put(NetworkStatusController(), permanent: true);
   Get.put(AuthController());
   Get.put(SupportedCountryController()).fetchCountries();
@@ -58,6 +60,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+/*
 class ModeTest extends StatefulWidget {
   const ModeTest({
     super.key,
@@ -175,3 +178,5 @@ class _ModeTestState extends State<ModeTest> {
     );
   }
 }
+
+*/
